@@ -1,14 +1,13 @@
-# Homebrew Tap for Fence
-
-This tap publishes the `fence` formula used to install and update Fence on macOS.
+# Homebrew Tap for Tusk packages
 
 ## Usage
 
 ```bash
 brew tap use-tusk/tap
-brew install fence
-brew upgrade fence
+brew install <formula>
+brew upgrade <formula>
 ```
 
-The formula in `Formula/fence.rb` is updated automatically from releases in:
-`https://github.com/Use-Tusk/fence`
+## Available formulae
+
+- `fence`
