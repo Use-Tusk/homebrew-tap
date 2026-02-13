@@ -11,3 +11,4 @@ brew upgrade <formula>
 ## Available formulae
 
 - `fence`
+- `tusk`
