@@ -5,21 +5,21 @@
 class Fence < Formula
   desc "Lightweight, container-free sandbox for running commands with network and filesystem restrictions"
   homepage "https://github.com/Use-Tusk/fence"
-  version "0.1.26"
+  version "0.1.27"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/Use-Tusk/fence/releases/download/v0.1.26/fence_0.1.26_Darwin_x86_64.tar.gz"
-      sha256 "6068fcafae39461fc08707379218d01624ac219d1b12a915d394a9d9ea8aad00"
+      url "https://github.com/Use-Tusk/fence/releases/download/v0.1.27/fence_0.1.27_Darwin_x86_64.tar.gz"
+      sha256 "991010324da9a8758ba332e9ea4748ba634512531adb32cc6ac0781ce40047a8"
 
       def install
         bin.install "fence"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/Use-Tusk/fence/releases/download/v0.1.26/fence_0.1.26_Darwin_arm64.tar.gz"
-      sha256 "10ef49aabd779b3a49311cd4d9c453f7b313d1dbb856cd6ad0902b1e908987f0"
+      url "https://github.com/Use-Tusk/fence/releases/download/v0.1.27/fence_0.1.27_Darwin_arm64.tar.gz"
+      sha256 "b124449f1f9ca443c3c47b5a3300d6802733048241fceedd03e3ad6300ac8226"
 
       def install
         bin.install "fence"
@@ -29,15 +29,15 @@ class Fence < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Use-Tusk/fence/releases/download/v0.1.26/fence_0.1.26_Linux_x86_64.tar.gz"
-      sha256 "f603c6b4be66c9fc19c1906125dfa1269092ef94485c590e1c4c41231226751f"
+      url "https://github.com/Use-Tusk/fence/releases/download/v0.1.27/fence_0.1.27_Linux_x86_64.tar.gz"
+      sha256 "6ca8a571f517c95db53f05be71326ed14c9fd3ba142c31d8973cee47b8b53c15"
       def install
         bin.install "fence"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Use-Tusk/fence/releases/download/v0.1.26/fence_0.1.26_Linux_arm64.tar.gz"
-      sha256 "cc629e3ea290c30fd90918e3840fe94d0928e4ae8fdb5d0e4bce5246bafedc53"
+      url "https://github.com/Use-Tusk/fence/releases/download/v0.1.27/fence_0.1.27_Linux_arm64.tar.gz"
+      sha256 "975b4b0bb2ac18af563b493070849fbaf7ea86418f5884ff28adb21fd6d7e8ca"
       def install
         bin.install "fence"
       end
