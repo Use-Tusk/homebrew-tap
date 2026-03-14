@@ -5,21 +5,21 @@
 class Tusk < Formula
   desc "CLI for recording and replaying API traffic tests with Tusk Drift"
   homepage "https://github.com/Use-Tusk/tusk-drift-cli"
-  version "0.2.0"
+  version "0.2.1"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/Use-Tusk/tusk-drift-cli/releases/download/v0.2.0/tusk-drift-cli_0.2.0_Darwin_x86_64.tar.gz"
-      sha256 "eb1da496c5df62d4354e70a7e8e293b34f68141a133fddcbec51b758e9747fb9"
+      url "https://github.com/Use-Tusk/tusk-drift-cli/releases/download/v0.2.1/tusk-drift-cli_0.2.1_Darwin_x86_64.tar.gz"
+      sha256 "7e80b569aeb2839d0edd6723feda28954fe0c0ff45d6606d6cd3d1d23388bc9e"
 
       define_method(:install) do
         bin.install "tusk"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/Use-Tusk/tusk-drift-cli/releases/download/v0.2.0/tusk-drift-cli_0.2.0_Darwin_arm64.tar.gz"
-      sha256 "f4c6aefaadd48c23ef27ea9e93a932cdfea5c539237300304c3496157c8ff555"
+      url "https://github.com/Use-Tusk/tusk-drift-cli/releases/download/v0.2.1/tusk-drift-cli_0.2.1_Darwin_arm64.tar.gz"
+      sha256 "b3faaf072ef46c5c6192bde6ef88de2267b08668ccb479b9ba2a32fbbdf22fe5"
 
       define_method(:install) do
         bin.install "tusk"
@@ -29,15 +29,15 @@ class Tusk < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Use-Tusk/tusk-drift-cli/releases/download/v0.2.0/tusk-drift-cli_0.2.0_Linux_x86_64.tar.gz"
-      sha256 "e81308e7ec4b7802024b18958cf8f3da2addd99b56f96efa51b76707ca8e7093"
+      url "https://github.com/Use-Tusk/tusk-drift-cli/releases/download/v0.2.1/tusk-drift-cli_0.2.1_Linux_x86_64.tar.gz"
+      sha256 "a77281d6932b097017080cf7273c2aca075fa9553bbea054387190f358510953"
       define_method(:install) do
         bin.install "tusk"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Use-Tusk/tusk-drift-cli/releases/download/v0.2.0/tusk-drift-cli_0.2.0_Linux_arm64.tar.gz"
-      sha256 "95b9a5bb6808f1e3c4c2d38182a67bff8985246a4ceee30fcd42ba6ce024a795"
+      url "https://github.com/Use-Tusk/tusk-drift-cli/releases/download/v0.2.1/tusk-drift-cli_0.2.1_Linux_arm64.tar.gz"
+      sha256 "8b07568cbffd4101a5ca36bc8b7c3eb91e35ac4458e113fb137e030d42b4c6d5"
       define_method(:install) do
         bin.install "tusk"
       end
