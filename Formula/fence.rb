@@ -5,21 +5,21 @@
 class Fence < Formula
   desc "Lightweight, container-free sandbox for running commands with network and filesystem restrictions"
   homepage "https://github.com/Use-Tusk/fence"
-  version "0.1.34"
+  version "0.1.35"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/Use-Tusk/fence/releases/download/v0.1.34/fence_0.1.34_Darwin_x86_64.tar.gz"
-      sha256 "42b33180f0927266d4b3831f536f1e2b797b61cc397aafb8e2bc5576cf183e9b"
+      url "https://github.com/Use-Tusk/fence/releases/download/v0.1.35/fence_0.1.35_Darwin_x86_64.tar.gz"
+      sha256 "0ef19662ecf00e40abdf24891db2c3c859d29165d657227fc95a74d2bdef2c14"
 
       define_method(:install) do
         bin.install "fence"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/Use-Tusk/fence/releases/download/v0.1.34/fence_0.1.34_Darwin_arm64.tar.gz"
-      sha256 "dd9d74c98c87bf7caabba6a5684f42c3231550613868bf2d2845c1c67d850d7a"
+      url "https://github.com/Use-Tusk/fence/releases/download/v0.1.35/fence_0.1.35_Darwin_arm64.tar.gz"
+      sha256 "2b6fa396f94821423add30eab9fda2efc8a3ae9c374434ddd40472a98c51e584"
 
       define_method(:install) do
         bin.install "fence"
@@ -29,15 +29,15 @@ class Fence < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Use-Tusk/fence/releases/download/v0.1.34/fence_0.1.34_Linux_x86_64.tar.gz"
-      sha256 "a5f3c6d9588c5c59a69b23861bc7727d3bb9b18c224c394f491a3b52ae9247d8"
+      url "https://github.com/Use-Tusk/fence/releases/download/v0.1.35/fence_0.1.35_Linux_x86_64.tar.gz"
+      sha256 "e31cec3db6d4d94fddc73a4a68d848f038152a11d95be7ef3ac9b7cde22c3a85"
       define_method(:install) do
         bin.install "fence"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Use-Tusk/fence/releases/download/v0.1.34/fence_0.1.34_Linux_arm64.tar.gz"
-      sha256 "ac23efe7890cbe5040d20daf908f05c55a447b39512c8ad620b3a4715a820cf1"
+      url "https://github.com/Use-Tusk/fence/releases/download/v0.1.35/fence_0.1.35_Linux_arm64.tar.gz"
+      sha256 "8571a99b6563ea5c3bae7e370f7301488672b61d88c902ddcacf4260adf0da66"
       define_method(:install) do
         bin.install "fence"
       end
