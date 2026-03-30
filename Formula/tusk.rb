@@ -5,21 +5,21 @@
 class Tusk < Formula
   desc "CLI for recording and replaying API traffic tests with Tusk Drift"
   homepage "https://github.com/Use-Tusk/tusk-cli"
-  version "0.2.7"
+  version "0.2.8"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/Use-Tusk/tusk-cli/releases/download/v0.2.7/tusk-cli_0.2.7_Darwin_x86_64.tar.gz"
-      sha256 "21f5590a0004e2233a497bfa3eaecc9e525771958ea7b4d14d7c157f678908cb"
+      url "https://github.com/Use-Tusk/tusk-cli/releases/download/v0.2.8/tusk-cli_0.2.8_Darwin_x86_64.tar.gz"
+      sha256 "2b30e8760d74ac472cc1df9c71b7692f65de1ae59a3fd607d685352a46af34b0"
 
       define_method(:install) do
         bin.install "tusk"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/Use-Tusk/tusk-cli/releases/download/v0.2.7/tusk-cli_0.2.7_Darwin_arm64.tar.gz"
-      sha256 "876249bf3fe8ab2518c1b442001d5cae14bc73ed68fd4906eba8f7e18cda20dc"
+      url "https://github.com/Use-Tusk/tusk-cli/releases/download/v0.2.8/tusk-cli_0.2.8_Darwin_arm64.tar.gz"
+      sha256 "2eaebc6855b1623ddeac9e1a6d1e8c017fc7aed5b72c8e63f862237ae7643ed3"
 
       define_method(:install) do
         bin.install "tusk"
@@ -29,15 +29,15 @@ class Tusk < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Use-Tusk/tusk-cli/releases/download/v0.2.7/tusk-cli_0.2.7_Linux_x86_64.tar.gz"
-      sha256 "0896930e5d9e45326b1a7a9b8844eeb613d23fe470b2f698ebdbd35658716c7f"
+      url "https://github.com/Use-Tusk/tusk-cli/releases/download/v0.2.8/tusk-cli_0.2.8_Linux_x86_64.tar.gz"
+      sha256 "029fbd7d6a090b2fd5ea2e09b8e700b2b40aae7f5070a355d7d71042e01c6777"
       define_method(:install) do
         bin.install "tusk"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Use-Tusk/tusk-cli/releases/download/v0.2.7/tusk-cli_0.2.7_Linux_arm64.tar.gz"
-      sha256 "8333c67e81c66e51528b3cd5acf93b6986b8bc12317fc734c0928b1179518614"
+      url "https://github.com/Use-Tusk/tusk-cli/releases/download/v0.2.8/tusk-cli_0.2.8_Linux_arm64.tar.gz"
+      sha256 "063c2b92c4310522982e56bbd278b33ef05bd19ccdb17bdc22c5bcd434f2e225"
       define_method(:install) do
         bin.install "tusk"
       end
